@@ -64,7 +64,7 @@ export const DataVisualizationScreen = ({ data }: Props) => {
                     : null)}
             </div>
 
-            <div className="toggle">
+            <div className="toggle" onMouseOver={ () => handleHoverWell(false)}>
                 <p>Toggle to active hover in headmap</p>
                 <div className={`switch-container ${isActiveHover ? 'active' : ''}`} onClick={toggleSwitch}>
                     <div className="switch-handle"></div>
