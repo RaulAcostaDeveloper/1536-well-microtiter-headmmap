@@ -1,0 +1,85 @@
+.DataVisualizationScreen {
+
+    h1, p{
+        margin: 10px;
+    }
+
+    .selector-container {
+        margin: 10px;
+        font-family: 'Arial', sans-serif;
+
+        .selector-label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        #metric-selector {
+            padding: 10px 15px;
+            width: 100%;
+            max-width: 300px; 
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        #metric-selector:hover,
+        #metric-selector:focus {
+            border-color: #0056b3;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+    }
+
+    .toggle{
+        margin-top: 20px;
+        .switch-container {
+            margin: 10px;
+            width: 60px;   
+            height: 34px;   
+            background-color: #ccc;
+            border-radius: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .switch-container.active {
+            background-color: #4CAF50;
+            justify-content: flex-end;
+        }
+
+        .switch-handle {
+            width: 26px;
+            height: 26px;
+            background-color: white;
+            border-radius: 50%;
+            margin: 4px;
+            transition: transform 0.3s;
+        }
+    }
+
+    .HeatmapDataFromPlot {
+        padding-bottom: 50px;
+    }
+    .HeatmapDataFromD3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+        padding-bottom: 50px;
+        h3 {
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+        }
+    }
+}

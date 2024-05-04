@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: consolas;
+}
+
+.HeaderNav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:  white;
+    padding: 10px;
+    button {
+        color:  white;
+        margin-right: 10px;
+        border: none;
+        background-color: transparent;
+        font-weight: bold;
+        text-decoration:underline;
+    }
+}
+
+.wellMicrotiterPage {
+    display: flex;
+    justify-content: center;
+    /* background-color: gray; */
+    .contentPage {
+        width: 100%;
+        height: 100vh;
+        max-width: 768px;
+        background-color: white;
+    }
+}       
