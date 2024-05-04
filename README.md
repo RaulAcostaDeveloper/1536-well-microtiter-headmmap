@@ -34,6 +34,8 @@ To start the development server:
 
 npm start
 
+go to http://localhost:3000
+
 ### Building for Production
 To build the app for production to the build folder:
 
@@ -54,6 +56,31 @@ PapaParse - A powerful CSV (Comma Separated Values) parser.
 @testing-library/react, @testing-library/jest-dom, and @testing-library/user-event - Used for testing React components.
 
 web-vitals - A library for measuring performance on the web.
+
+## Docker instructions
+You can create and build a docker container with adding a Docker file and running docker build -t app-name
+
+1._ if you require the docker container compiled, should run this instructions
+
+   a) $ git checkout docker-test
+
+   b) do $ git pull origin docker-test if is necessary
+
+2._ Download and install Docker
+
+https://www.docker.com/products/docker-desktop/
+
+3._ Check if docker is installed
+docker --version
+
+4._ Run Docker
+
+5._ Run docker container
+
+docker run -p 3000:3000 1536-well-microtier-headmap
+
+go to http://localhost:3000
+
 
 
 # Additional Information
