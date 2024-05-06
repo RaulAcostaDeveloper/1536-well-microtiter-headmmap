@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Papa from 'papaparse'; // use Papa library to transform data from .csv file into an array of values
 import { WellData } from "../Models/data.tsx";
+import { DownLoadATestFile } from "./downLoadATestFile.tsx";
 
 type Props = {
     setData: (data:WellData[]) => void,
@@ -63,6 +64,7 @@ export const DataLoadingScreen = ({ setData, setFileName, fileName }: Props) => 
                 <input type="file" accept=".csv" onChange={ handleFileChange } />
                 { fileName && <p>File loaded: { fileName }</p>}
                 { error && <div> { error } </div> }
+                <DownLoadATestFile/>
             </div>
         </div>
     )
