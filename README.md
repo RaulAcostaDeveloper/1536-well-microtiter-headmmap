@@ -21,7 +21,7 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-   git clone https://github.com/your-username/1536-well-microtier-headmap.git
+   git clone [https://github.com/your-username/1536-well-microtier-headmap.git](https://github.com/RaulAcostaDeveloper/1536-well-microtiter-headmmap.git)
    cd 1536-well-microtier-headmap
 
 ### Install NPM packages:
